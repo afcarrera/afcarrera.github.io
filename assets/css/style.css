@@ -1,0 +1,80 @@
+/* LAYOUT
+================================================== */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* HERO
+================================================== */
+.hero {
+  background: url(../img/hero.jpg) center no-repeat;
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: relative;
+  background-size: cover;
+}
+
+.background-overlay:before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hero-content {
+  color: #ffffff;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+
+.hero-content h1 {
+  width: 100%;
+  padding: 0 15px;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  padding: 0 15px;
+  margin: 30px auto 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-content .hero-job {
+  font-size: 18px;
+}
+
+.hero-content .hero-job span {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.hero-content .hero-job-desc {
+  font-size: 14px;
+  max-width: 700px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* HERO */
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  .hero-content p {
+    margin: 20px auto 0;
+  }
+}
+
